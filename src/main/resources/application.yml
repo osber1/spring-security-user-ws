@@ -1,4 +1,10 @@
-server.port: 8082
+server:
+  port: 8082
+  ssl:
+    key-store: classpath:serverkeystore.jks
+    key-store-type: JKS
+    key-store-password: topsecret
+    key-alias: tcserver
 
 spring:
   jpa:
